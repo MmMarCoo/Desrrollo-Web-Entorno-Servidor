@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    input:invalid{
+        border: 2px solid red;
+        background-color: beige;
+    }
+    button{
+        background-color: darkslateblue; 
+        color:darksalmon; 
+        padding:20px; 
+        border:none; 
+        border-radius: 50%;
+        transition: background-color 0.7s ease, transform 0.7s ease;
+        cursor:pointer;
+    }
+    button:hover{
+        background-color: aquamarine;
+        border: solid;
+        text-decoration: underline;
+        transition:linear;
+        transform:scale(1.1);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+</style>
+    <head>
+
+    </head>
+    
+    <body>
+        <h1>1. Crear un Formulario de Contacto</h1>
+        <form action="/enviar" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+          
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+          
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+          
+            <button type="submit">Enviar</button>
+          </form>
+    </body>
+</html>

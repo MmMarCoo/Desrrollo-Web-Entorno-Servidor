@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Imágenes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .galeria {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .galeria img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 8px;
+      display: inline-block;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05); /* Aumenta el tamaño de la imagen cuando el cursor está encima */
+    }
+
+    /* Para asegurar que las imágenes se alineen en filas y no se desborden */
+    .fila {
+      white-space: nowrap; /* Evita que las imágenes se desborden */
+      overflow-x: auto; /* Habilita desplazamiento horizontal si es necesario */
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="galeria">
+    <div class="fila">
+      <img src="https://images.pexels.com/photos/2372978/pexels-photo-2372978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 1">
+      <img src="https://images.pexels.com/photos/1674049/pexels-photo-1674049.jpeg" alt="Imagen 2">
+      <img src="https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 3">
+      <img src="https://images.pexels.com/photos/69903/pexels-photo-69903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 4">
+    </div>
+    <div class="fila">
+      <img src="https://images.pexels.com/photos/3004909/pexels-photo-3004909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 5">
+      <img src="https://images.pexels.com/photos/2372979/pexels-photo-2372979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 6">
+      <img src="https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 7">
+      <img src="https://images.pexels.com/photos/2149422/pexels-photo-2149422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen 8">
+    </div>
+  </div>
+
+</body>
+</html>
